@@ -3,66 +3,161 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Waqas | Luxury Figma to HTML Expert - Premium Portfolio</title>
-<meta name="description" content="Figma to HTML crafted for luxury brands. 50+ projects delivered, pixel-perfect. WhatsApp 03716649231 - Lahore">
-<meta property="og:title" content="Waqas | Luxury Figma to HTML Expert">
-<meta property="og:description" content="Premium Figma to HTML conversion for luxury brands.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<title>LUXE | Premium Experience</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { serif: ['Playfair Display'], sans: ['Inter'] },
+      colors: { gold: '#D4AF37', goldLight: '#F5E6A3', dark: '#0A0A0A', dark2: '#141414' }
+    }
+  }
+}
+</script>
 <style>
-body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#f5e6c8;scroll-behavior:smooth}
-.serif{font-family:'Cormorant Garamond',serif}
-.glow{box-shadow:0 0 30px rgba(245,230,200,0.08);border:1px solid rgba(245,230,200,0.15);transition:all 0.4s ease}
-.glow:hover{box-shadow:0 0 45px rgba(245,230,200,0.18);transform:translateY(-6px)}
+html{scroll-behavior:smooth}
+body{background:#0A0A0A}
+.gold-gradient{background:linear-gradient(90deg,#D4AF37,#F5E6A3,#D4AF37)}
+.text-gold-gradient{background:linear-gradient(90deg,#D4AF37,#F5E6A3);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.reveal{opacity:0;transform:translateY(30px);transition:all 0.8s ease}
+.reveal.active{opacity:1;transform:translateY(0)}
 </style>
 </head>
-<body>
+<body class="font-sans text-white antialiased">
 
-<header class="flex justify-between items-center p-8 max-w-7xl mx-auto sticky top-0 bg-[#0a0a0a]/90 backdrop-blur-md z-50 border-b border-white/5">
-<div class="serif text-4xl tracking-wide">Waqas</div>
-<nav class="hidden md:flex gap-8 text-[11px] tracking-[0.2em] opacity-60">
-<a href="#work" class="hover:opacity-100">WORK</a>
-<a href="#" class="hover:opacity-100">ABOUT</a>
-<a href="#" class="hover:opacity-100">SERVICES</a>
+<!-- NAV -->
+<nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<h1 class="font-serif text-2xl tracking-[0.3em]">LUXE</h1>
+<div class="hidden md:flex gap-8 text-sm tracking-widest text-white/60">
+<a href="#work" class="hover:text-gold">WORK</a>
+<a href="#services" class="hover:text-gold">SERVICES</a>
+<a href="#contact" class="hover:text-gold">CONTACT</a>
+</div>
+<button onclick="openChat()" class="border border-gold text-gold px-6 py-2 text-xs tracking-widest hover:bg-gold hover:text-black transition">AI ASSISTANT</button>
+</div>
 </nav>
-<a href="https://wa.me/923716649231?text=Salam%20Waqas%20bhai,%20Luxury%20website%20chahiye" target="_blank" rel="noopener noreferrer" class="border border-[#f5e6c8] px-8 py-2.5 rounded-full text-xs tracking-widest hover:bg-[#f5e6c8] hover:text-black transition-all">HIRE ME</a>
-</header>
 
-<section class="text-center px-6 py-24 max-w-5xl mx-auto">
-<h1 class="serif text-6xl md:text-[92px] leading-[0.9] font-light">Figma to HTML, Crafted for Luxury Brands.</h1>
-<p class="mt-10 text-zinc-300 text-[17px] max-w-2xl mx-auto leading-relaxed font-light">I transform Figma designs into pixel-perfect, performant HTML/CSS — delivering premium websites with attention to detail, speed, and elegance.</p>
-<div class="mt-12 flex justify-center gap-4 flex-wrap">
-<a href="#work" class="bg-[#f5e6c8] text-black px-10 py-4 rounded-lg font-semibold tracking-wide hover:bg-white transition">View My Work</a>
-<a href="https://wa.me/923716649231" target="_blank" rel="noopener noreferrer" class="border border-[#f5e6c8]/40 px-10 py-4 rounded-lg tracking-wide hover:border-[#f5e6c8] transition">WhatsApp: 03716649231</a>
+<!-- HERO -->
+<section class="min-h-screen flex items-center pt-20 px-6">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full">
+<div class="reveal active">
+<p class="text-gold tracking-[0.4em] text-xs mb-6">EST. 2024 — PREMIUM DIGITAL EXPERIENCE</p>
+<h2 class="font-serif text-5xl md:text-7xl leading-[0.9] mb-6">We Craft<br><span class="text-gold-gradient">Luxury</span><br>Digital.</h2>
+<p class="text-white/50 max-w-md mb-8 leading-relaxed">High-end websites with integrated AI sales assistant that converts visitors into paying clients automatically.</p>
+<div class="flex gap-4">
+<a href="#contact" class="bg-white text-black px-8 py-4 text-xs tracking-widest hover:bg-gold transition">START PROJECT</a>
+<button onclick="openChat()" class="border border-white/20 px-8 py-4 text-xs tracking-widest hover:border-gold hover:text-gold transition">TRY AI BOT →</button>
 </div>
-<div class="mt-20 flex justify-center gap-12 md:gap-20 text-sm border-t border-white/10 pt-10 flex-wrap">
-<div><div class="serif text-xl">50+ Projects Delivered</div><div class="opacity-50 text-xs mt-1">Worldwide Clients</div></div>
-<div class="hidden md:block w-px bg-white/10"></div>
-<div><div class="serif text-xl">100% Pixel-Perfect</div><div class="opacity-50 text-xs mt-1">Figma → HTML Conversion</div></div>
-<div class="hidden md:block w-px bg-white/10"></div>
-<div><div class="serif text-xl">5-Star Reviews</div><div class="opacity-50 text-xs mt-1">Client Satisfaction</div></div>
+<div class="flex gap-12 mt-12 border-t border-white/10 pt-8">
+<div><h4 class="font-serif text-3xl">150+</h4><p class="text-white/40 text-xs tracking-widest">PROJECTS</p></div>
+<div><h4 class="font-serif text-3xl">98%</h4><p class="text-white/40 text-xs tracking-widest">CLIENT SATISFACTION</p></div>
+<div><h4 class="font-serif text-3xl">24/7</h4><p class="text-white/40 text-xs tracking-widest">AI SALES</p></div>
+</div>
+</div>
+<div class="relative reveal active">
+<div class="aspect-[4/5] bg-dark2 border border-white/10 p-2">
+<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=800" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+<div class="absolute -bottom-6 -left-6 bg-gold text-black p-6 max-w-[240px]">
+<p class="font-serif text-sm leading-tight">"The AI bot closed 3 sales while I was sleeping. This is next level."</p>
+<p class="text-[10px] tracking-widest mt-3 opacity-70">— LUXURY CLIENT, DUBAI</p>
+</div>
+</div>
+</div>
 </div>
 </section>
 
-<section id="work" class="px-6 max-w-7xl mx-auto pb-24">
-<div class="text-xs tracking-[0.3em] opacity-50 mb-10">SELECTED WORK —</div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="glow rounded-[20px] p-3 bg-[#111]"><div class="bg-gradient-to-br from-zinc-900 to-zinc-800 h-64 rounded-[16px] flex items-center justify-center text-zinc-500 text-sm">Luxe Ecommerce Preview</div><h3 class="mt-5 serif text-xl px-2">Luxe Ecommerce</h3><p class="px-2 text-xs opacity-50 mt-1">Shopify → Custom HTML / Tailwind</p></div>
-<div class="glow rounded-[20px] p-3 bg-[#111]"><div class="bg-gradient-to-br from-zinc-900 to-zinc-800 h-64 rounded-[16px] flex items-center justify-center text-zinc-500 text-sm">Fintech Dashboard Preview</div><h3 class="mt-5 serif text-xl px-2">Fintech Dashboard</h3><p class="px-2 text-xs opacity-50 mt-1">React → Static HTML / Responsive</p></div>
-<div class="glow rounded-[20px] p-3 bg-[#111]"><div class="bg-gradient-to-br from-zinc-900 to-zinc-800 h-64 rounded-[16px] flex items-center justify-center text-zinc-500 text-sm">Brand Website Preview</div><h3 class="mt-5 serif text-xl px-2">Brand Website</h3><p class="px-2 text-xs opacity-50 mt-1">Figma → HTML / GSAP Animations</p></div>
+<!-- SERVICES -->
+<section id="services" class="py-24 px-6 bg-dark2 border-y border-white/5">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16 reveal">
+<h3 class="font-serif text-4xl">What We Deliver</h3>
+<p class="text-white/40 text-sm max-w-xs">Everything you need to look expensive online and sell automatically.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-[1px] bg-white/10">
+<div class="bg-dark p-10 reveal"><p class="text-gold text-xs tracking-widest mb-4">01</p><h4 class="font-serif text-xl mb-3">Luxury Design</h4><p class="text-white/40 text-sm leading-relaxed">Figma to HTML, black & gold, animations, fully responsive. Looks like $1000 website.</p></div>
+<div class="bg-dark p-10 reveal"><p class="text-gold text-xs tracking-widest mb-4">02</p><h4 class="font-serif text-xl mb-3">AI Sales Bot</h4><p class="text-white/40 text-sm leading-relaxed">Trained on your business. Answers FAQs, takes orders, sends lead to your WhatsApp 24/7.</p></div>
+<div class="bg-dark p-10 reveal"><p class="text-gold text-xs tracking-widest mb-4">03</p><h4 class="font-serif text-xl mb-3">Fast & SEO Ready</h4><p class="text-white/40 text-sm leading-relaxed">Loads in 1 sec, Google friendly, WhatsApp & Instagram integrated.</p></div>
+</div>
 </div>
 </section>
 
-<section class="text-center py-24 px-6 bg-[#f5e6c8] text-black rounded-t-[40px]">
-<h2 class="serif text-5xl md:text-6xl leading-[0.9]">Let's Build Something<br>Luxurious.</h2>
-<p class="mt-6 opacity-70 text-[15px]">Ready in 24 hours. Direct WhatsApp support from Lahore.</p>
-<a href="https://wa.me/923716649231?text=Salam%20Waqas%20bhai,%20Final%20luxury%20website%20ka%20order%20dena%20hai" target="_blank" rel="noopener noreferrer" class="inline-block mt-8 bg-black text-[#f5e6c8] px-12 py-4 rounded-full font-semibold hover:bg-zinc-900 transition">Chat on WhatsApp 03716649231</a>
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-6">
+<div class="max-w-7xl mx-auto text-center reveal">
+<h3 class="font-serif text-5xl mb-6">Let's Make You<br><span class="text-gold">Expensive</span></h3>
+<p class="text-white/40 mb-10">Free demo + AI bot setup today</p>
+<a href="https://wa.me/923716649231" class="inline-block bg-gold text-black px-10 py-4 text-xs tracking-[0.2em] hover:bg-white transition">WHATSAPP: 03716649231</a>
+<p class="text-white/20 text-xs mt-8 tracking-widest">WAQAS7283.GITHUB.IO/LUXURY-PORTFOLIO</p>
+</div>
 </section>
 
-<footer class="text-center py-8 bg-[#f5e6c8] text-black/50 text-xs border-t border-black/10">© 2026 Waqas A. | waqas7283.github.io | Crafted with precision in Lahore, Pakistan</footer>
+<!-- AI CHATBOT -->
+<div id="chatBtn" onclick="openChat()" class="fixed bottom-6 right-6 z-50 bg-gold text-black w-14 h-14 rounded-full flex items-center justify-center cursor-pointer shadow-[0_0_30px_rgba(212,175,55,0.4)] animate-pulse">AI</div>
 
-<a href="https://wa.me/923716649231" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="fixed bottom-6 right-6 bg-[#f5e6c8] text-black w-14 h-14 rounded-full flex items-center justify-center font-bold shadow-2xl hover:scale-110 transition">W</a>
+<div id="chatBox" class="fixed bottom-24 right-6 w-[350px] max-w-[90vw] bg-[#111] border border-gold/30 rounded-2xl z-50 hidden flex-col overflow-hidden shadow-2xl">
+<div class="bg-gold p-4 flex justify-between items-center">
+<div><h4 class="text-black font-bold text-sm">LUXE AI Assistant</h4><p class="text-black/60 text-[11px]">● Online • Replies instantly</p></div>
+<button onclick="closeChat()" class="text-black/60">✕</button>
+</div>
+<div id="chatMessages" class="h-[340px] overflow-y-auto p-4 space-y-3 bg-[#0A0A0A]">
+<div class="bg-white/10 p-3 rounded-xl rounded-bl-none text-sm max-w-[80%]">Hi! 👋 I'm your AI sales assistant. I can help you with pricing, services, or place an order. What are you looking for today?</div>
+</div>
+<div class="p-3 border-t border-white/10 flex gap-2 bg-[#111]">
+<input id="chatInput" placeholder="Type your message..." class="flex-1 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm outline-none focus:border-gold">
+<button onclick="sendMsg()" class="bg-gold text-black px-5 py-2 rounded-full text-sm font-bold">Send</button>
+</div>
+</div>
 
+<script>
+const messagesDiv = document.getElementById('chatMessages');
+const input = document.getElementById('chatInput');
+function openChat(){document.getElementById('chatBox').classList.remove('hidden');document.getElementById('chatBox').classList.add('flex');document.getElementById('chatBtn').classList.add('hidden')}
+function closeChat(){document.getElementById('chatBox').classList.add('hidden');document.getElementById('chatBtn').classList.remove('hidden')}
+
+function botReply(text){
+  const replies = {
+    price: "Our luxury package starts from $150 (Rs. 25,000). Includes premium design + AI bot + 1 year support. Want a free demo link?",
+    demo: "Sure! Here's live demo: https://waqas7283.github.io/luxury-portfolio/ — The AI bot you're talking to right now will be on your site too!",
+    order: "Great! Please share your business name and WhatsApp. I'll send you payment details and start your site in 24 hours. Or directly WhatsApp me: 03716649231",
+    default: "I can help with Pricing, Demo, Services, or Order. Just type 'price' or 'demo'. Or chat directly with Waqas on WhatsApp: 03716649231"
+  };
+  let key = 'default';
+  text = text.toLowerCase();
+  if(text.includes('price') || text.includes('cost') || text.includes('kitna')) key='price';
+  if(text.includes('demo') || text.includes('link') || text.includes('example')) key='demo';
+  if(text.includes('order') || text.includes('buy') || text.includes('start')) key='order';
+  
+  setTimeout(()=>{
+    const div = document.createElement('div');
+    div.className = 'bg-white/10 p-3 rounded-xl rounded-bl-none text-sm max-w-[85%]';
+    div.innerText = replies[key];
+    messagesDiv.appendChild(div);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  },600);
+}
+
+function sendMsg(){
+  if(!input.value.trim()) return;
+  const userDiv = document.createElement('div');
+  userDiv.className = 'bg-gold text-black p-3 rounded-xl rounded-br-none text-sm max-w-[80%] ml-auto';
+  userDiv.innerText = input.value;
+  messagesDiv.appendChild(userDiv);
+  botReply(input.value);
+  input.value = '';
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+input.addEventListener('keypress', e=>{ if(e.key==='Enter') sendMsg() });
+
+// reveal on scroll
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', ()=>{
+  reveals.forEach(r=>{
+    if(r.getBoundingClientRect().top < window.innerHeight - 80) r.classList.add('active');
+  });
+});
+</script>
 </body>
-  </html>
+                                                </html>
